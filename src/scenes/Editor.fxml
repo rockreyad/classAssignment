@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #0f0222; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneController">
+   <children>
+      <AnchorPane prefHeight="390.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Rectangle arcHeight="2.0" arcWidth="5.0" height="385.0" layoutY="5.0" stroke="#0000002a" strokeType="INSIDE" strokeWidth="0.0" width="350.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19607843458652496" green="0.7803921699523926" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.24313725531101227" green="0.8941176533699036" blue="0.5921568870544434" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="49.0" layoutY="47.0" prefHeight="319.0" prefWidth="302.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="47.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="13.0" prefWidth="255.0" text="Start Typing">
+                     <font>
+                        <Font name="Rockwell Bold" size="15.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.44410941004753113" green="0.46052631735801697" blue="0.37097951769828796" opacity="0.9399999976158142" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.3552631437778473" green="0.3202850818634033" blue="0.16447368264198303" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <TextField fx:id="inputTextBox" alignment="TOP_LEFT" onInputMethodTextChanged="#clearText" onKeyPressed="#inputShowtoOutput" prefHeight="83.0" prefWidth="257.0" style="-fx-background-color: #262625; -fx-text-fill: #b3b3b3;" text="Enter anything.....">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="252.0" style="-fx-background-color: #3d5fd9; -fx-background-radius: 3;" text="Output" textFill="#f2f2f2">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="tvArea" alignment="TOP_LEFT" prefHeight="124.0" prefWidth="252.0" style="-fx-background-color: #363638;" text="Your Output" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Tw Cen MT" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
